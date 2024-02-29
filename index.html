@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Task</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+        <div class="navbar">
+            <div class="navbar-left">
+                <a href="#" class="nav-bar left" id="icon" onclick="navigateTo('index.html')"><img class="icon" src="home-icon.png" alt="Home"></a>
+                <a href="#" class="brand" id="brand" onclick="navigateTo('index.html')">YourTask</a>
+            </div>
+            <div class="navbar-right">
+                <a href="#" class="nav-item" id="selection1" onclick="navigateTo('selection1.html')">Selection1</a>
+                <a href="#" class="nav-item" id="selection2" onclick="navigateTo('selection2.html')">Selection2</a>
+                <a href="#" class="nav-item" id="selection3" onclick="navigateTo('selection3.html')">Selection3</a>
+                <a href="#" class="nav-item" id="selection4" onclick="navigateTo('selection4.html')">Selection4</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- İçerik Alanı -->
+    <div class="content">
+        <div class="container">
+            <form id="loginForm" class="form">
+                <h2 class = "txt">Sign In</h2>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="button" onclick="signIn()">Sign In</button>
+            </form>
+    
+            <button id="signOutBtn" class="hidden" onclick="signOut()">Sign Out</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; since 2024 for you</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
